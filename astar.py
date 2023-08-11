@@ -4,6 +4,10 @@ author: Atsushi Sakai(@Atsushi_twi)
         Nikos Kanargias (nkana@tee.gr)
 See Wikipedia article (https://en.wikipedia.org/wiki/A*_search_algorithm)
 """
+"""
+Additional changes have been made to the original code for the purpose of this project
+author: Apoorva Khairnar
+"""
 
 import math
 import numpy as np
