@@ -239,8 +239,6 @@ class RRTStar(RRT):
 
 
 def main(sx,sy,gx,gy,obstacle_list,robot_radius,i):
-    i = i+0
-
     traj_df = pd.DataFrame({'X':[], 'Y':[]})
 
     px = 1/plt.rcParams['figure.dpi']  # pixel in inches
