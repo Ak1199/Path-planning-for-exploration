@@ -179,15 +179,9 @@ def draw_heatmap(data, ax, reso, miny):
 
 
 def main(sx,sy,gx,gy,obstacle_list,robot_radius, i):
-    i = i+0
     print("potential_field_planning start")
 
-    # sx = -2.5  # start x position [m]
-    # sy = 5.0  # start y positon [m]
-    # gx = -1  # goal x position [m]
-    # gy = 7.5  # goal y position [m]
     grid_size = 0.1  # potential grid size [m]
-    # robot_radius = 0.5  # robot radius [m]
 
     traj_df = pd.DataFrame({'X':[], 'Y':[]})
 
@@ -199,9 +193,6 @@ def main(sx,sy,gx,gy,obstacle_list,robot_radius, i):
     implot = plt.imshow(im, extent=(-11, 11, -11, 11))
     ax.set_xlim([-11, 11])
     ax.set_ylim([-11, 11])
-
-    # obstacle_list = [(4, 6, 1.2), (-7.5, 7.5, 1), (8.35, -8.25, 1.2), (-4, -5, 1.2), (3, -5, 1.2),
-    #                 (9, 7, 1), (-7, -8, 1), (0, -8, 0.245), (-6, 0, 0.245), (7, -2, 0.245), (-1, 5, 0.245)]  # [x, y, radius]
 
     ox, oy, size  = [], [], []
     for j in range(0,len(obstacle_list)):
