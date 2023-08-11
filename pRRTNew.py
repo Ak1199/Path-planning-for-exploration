@@ -2,6 +2,10 @@
 Path planning Sample Code with Randomized Rapidly-Exploring Random Trees (RRT)
 author: AtsushiSakai(@Atsushi_twi)
 """
+"""
+Additional changes have been made to the original code for the purpose of this project
+author: Apoorva Khairnar, Darshit Patel
+"""
 
 import math
 import random
