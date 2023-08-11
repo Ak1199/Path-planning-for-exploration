@@ -226,7 +226,6 @@ class AStarPlanner:
 
 
 def main(sx,sy,gx,gy,obstacle_list,robot_radius, i):
-    i = i+0
     resolution = 0.1
 
     traj_df = pd.DataFrame({'X':[], 'Y':[]})
@@ -239,24 +238,6 @@ def main(sx,sy,gx,gy,obstacle_list,robot_radius, i):
     implot = plt.imshow(im, extent=(-11, 11, -11, 11))
     ax.set_xlim([-11, 11])
     ax.set_ylim([-11, 11])
-
-    # set obstacle positions
-    ox, oy = [], []
-    # for j in range(0,len(obstacle_list)):
-    #     x = obstacle_list[j][0]
-    #     y = obstacle_list[j][1]
-    #     l = obstacle_list[j][2]
-    #     w = obstacle_list[j][3]
-    #     for k in np.arange(x-l/2,x+l/2+0.01, 0.01):
-    #         ox.append(k)
-    #         ox.append(k)
-    #         oy.append(y + w/2)
-    #         oy.append(y - w/2)
-    #     for k in np.arange(y-w/2,y+w/2+0.01, 0.01):
-    #         ox.append(x + l/2)
-    #         ox.append(x - l/2)
-    #         oy.append(k)
-    #         oy.append(k)
             
         
     for j in range(0,len(obstacle_list)):
