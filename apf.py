@@ -4,6 +4,10 @@ author: Atsushi Sakai (@Atsushi_twi)
 Ref:
 https://www.cs.cmu.edu/~motionplanning/lecture/Chap4-Potential-Field_howie.pdf
 """
+"""
+Additional changes have been made to the original code for the purpose of this project
+author: Apoorva Khairnar
+"""
 
 from collections import deque
 import numpy as np
