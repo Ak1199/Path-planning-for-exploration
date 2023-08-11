@@ -2,6 +2,10 @@
 Path planning Sample Code with RRT*
 author: Atsushi Sakai(@Atsushi_twi)
 """
+"""
+Additional changes have been made to the original code for the purpose of this project
+author: Apoorva Khairnar
+"""
 
 import math
 import sys
