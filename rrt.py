@@ -367,8 +367,6 @@ class RRT:
     
 
 def main(sx,sy,gx,gy,obstacle_list,robot_radius,i):
-    i = i+0
-
     traj_df = pd.DataFrame({'X':[], 'Y':[]})
 
     px = 1/plt.rcParams['figure.dpi']  # pixel in inches
@@ -388,10 +386,6 @@ def main(sx,sy,gx,gy,obstacle_list,robot_radius,i):
         )
     start_time = time.localtime(time.time())
     path = rrt.planning(show_animation, ax)
-
-    # # Path smoothing
-    # maxIter = 1000
-    # smoothedPath = rrt.path_smoothing(path, maxIter, obstacle_list)
 
     end_time = time.localtime(time.time())
 
